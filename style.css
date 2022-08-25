@@ -1,0 +1,94 @@
+:root {
+    --rd: darkred;
+}
+*{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    border: 0px;
+    margin: 0px;
+
+}
+header {
+    padding: 15px;
+    color: var(--rd);
+    background-color: black;
+}
+h1 {
+    display: inline-block;
+}
+body {
+    background-color:var(--rd);
+}
+figure img {
+    width: 100%;
+}
+article{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+footer{
+    background-color: indianred;
+    margin: 40px;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+}
+.left{
+    box-shadow: 2px 0px 0px 0px black;
+    padding: 100px;
+    font-size: xx-large;
+}
+.sub-title {
+    display: block; 
+    font-size: small;
+    margin-left: 30px;
+}
+.navBar {
+    float: right;
+    list-style-type: none;
+    margin: 15px auto;
+}
+.navBar ul li {
+    display: inline;
+    font-size: 20px;
+}
+.navBar ul li a{
+    text-decoration: none;
+    color:var(--rd);
+    margin-left: 10px;
+}
+.pwList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+}
+.pwList li{
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.514);
+    padding:10px;
+    margin: 5px;
+    background-color: indianred;
+    flex:1 1 1;
+    order: 1;
+    user-select: none;
+}
+.pwList li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+}
+.pwList li img{
+    width: 100%;
+}
+#firstProject{
+    flex:100%;
+}
+@media screen and (max-width: 576px) {
+    .pwList li {
+        flex:1 1 100%;
+    }
+  }
+  
