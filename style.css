@@ -1,32 +1,38 @@
 :root {
     --rd: darkred;
 }
+/* added variable to show i can*/
 *{
     box-sizing: border-box;
     flex-wrap: wrap;
     border: 0px;
     margin: 0px;
-
 }
+/*setup flexbox and make sure the elements align to the edges of the viewport*/
 header {
     padding: 15px;
     color: var(--rd);
     background-color: black;
 }
+/*colors the title bar and text and pads it so it dowsn't seem too small*/
 h1 {
     display: inline-block;
 }
+/*ensures the navpage on the otherside of screen stays at the same height as the title*/
 body {
     background-color:var(--rd);
 }
+/*sets the main background color*/
 figure img {
     width: 100%;
 }
+/*make it so the initial cat takes up the screen width but keeps ratio it's cute innit?*/
 article{
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
 }
+/*makes it so that the left side bar and the project boxes align properly*/
 footer{
     background-color: indianred;
     margin: 40px;
@@ -34,30 +40,36 @@ footer{
     text-align: center;
     font-size: larger;
 }
+/* backgrounds the contacts footer and centers the whole thing*/
 .left{
     box-shadow: 2px 0px 0px 0px black;
-    padding: 100px;
-    font-size: xx-large;
+    width: 10%;
+    font-size: 1.5vw;
 }
+/*the line next to the works word is a shadow and this is the css to make it the right size also makes the font and line responsive to screen size*/
 .sub-title {
     display: block; 
     font-size: small;
     margin-left: 30px;
 }
+/*makes it so the smaller text under the name looks right*/
 .navBar {
     float: right;
     list-style-type: none;
     margin: 15px auto;
 }
+/*makes it so the nav links stay on the right and don't have bullte points and isn't tooo squished*/
 .navBar ul li {
     display: inline;
     font-size: 20px;
 }
+/*makes the links inline and a legible size*/
 .navBar ul li a{
     text-decoration: none;
     color:var(--rd);
     margin-left: 10px;
 }
+/* mkaes the links red and not have underlines and also makes it no too squish*/
 .pwList {
     display: flex;
     flex-wrap: wrap;
@@ -65,6 +77,7 @@ footer{
     list-style-type: none;
     width: 100%;
 }
+/*the main formatting for the catlist excepting the first cat removes the bullet points centers the boxes l&r and the cards rearrangemant from resizing*/
 .pwList li{
     border-radius: 20px;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.514);
@@ -72,23 +85,34 @@ footer{
     margin: 5px;
     background-color: indianred;
     flex:1 1 1;
-    order: 1;
-    user-select: none;
 }
+/*pretties up the cat boxes and makes sure the boxes stays the right size*/
 .pwList li a{
     text-decoration: none;
     text-align: center;
     font-size: larger;
 }
+/*makes the words in the cards centered and not underlined*/
 .pwList li img{
     width: 100%;
 }
+/*makes it so the cat photos fit the boxes correctly*/
 #firstProject{
     flex:100%;
 }
-@media screen and (max-width: 576px) {
-    .pwList li {
-        flex:1 1 100%;
-    }
-  }
+/*first project link supersized*/
+#works{
+    padding-top: 20px;
+    text-align: center;
+    width: 80%;
+}
+/*without this the word sticks too close to the big cat*/
+.pwList li:hover{
+    background-color: rgb(128, 52, 52);
+}
+/*small box recolor when mouse hovers*/
+.navBar ul li a:hover{
+    color: rgb(73, 5, 5);
+}
+/*makes the nav buttons change color when hovered over*/
   
